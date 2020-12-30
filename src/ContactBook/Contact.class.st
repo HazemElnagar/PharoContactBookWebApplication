@@ -7,7 +7,8 @@ Class {
 	#superclass : #Object,
 	#instVars : [
 		'name',
-		'phone'
+		'phone',
+		'contacts'
 	],
 	#category : #ContactBook
 }
