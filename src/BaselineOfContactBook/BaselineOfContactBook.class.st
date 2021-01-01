@@ -21,7 +21,6 @@ BaselineOfContactBook >> bootstrap: spec [
 	spec
 		baseline: 'Bootstrap'
 		with: [ spec
-				loads: #('default' 'REST');
 				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
 ]
 
