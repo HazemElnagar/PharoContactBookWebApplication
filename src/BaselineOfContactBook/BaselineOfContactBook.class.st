@@ -13,8 +13,7 @@ BaselineOfContactBook >> baseline: spec [
 					self bootstrap:  spec.
 									
 					spec
-					package: 'ContactBook' with: [ spec requires: #('Bootstrap-Core') ]					
-					 ].
+					package: 'ContactBook'].
 				
 				
 			 
