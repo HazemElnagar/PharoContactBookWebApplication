@@ -11,7 +11,7 @@ BaselineOfContactBook >> baseline: spec [
 			for: #common
 			do: [
 					self seaside3:  spec.
-					
+				spec	package:'ContactBook' with: [ spec requires: #('Seaside3') ] 
 					].
 				
 				
