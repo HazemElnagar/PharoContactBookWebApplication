@@ -29,7 +29,7 @@ BaselineOfContactBook >> bootstrap: spec [
 		baseline: 'Bootstrap'
 		with: [ 
 			spec
-				repository: 'github.com/astares/Seaside-Bootstrap:master/repository' ]	
+				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
 ]
 
 { #category : #'private - subspecs' }
