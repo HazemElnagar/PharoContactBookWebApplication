@@ -11,7 +11,11 @@ BaselineOfContactBook >> baseline: spec [
 			for: #common
 			do: [
 					spec
-					package: 'ContactBook' ].
+					package: 'ContactBook'.
+					self bootstrap:  spec
+					 ].
+				
+				
 			 
 			
 
