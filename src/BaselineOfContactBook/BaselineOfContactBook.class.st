@@ -13,7 +13,7 @@ BaselineOfContactBook >> baseline: spec [
 					self seaside3:  spec.
 					self bootstrap:  spec.
 					spec
-					package: 'ContactBook'  with: [ spec requires: #('Bootstrap') ]
+					package: 'ContactBook'  with: [ spec requires: #('Seaside3''Bootstrap') ]
 					].
 				
 				
