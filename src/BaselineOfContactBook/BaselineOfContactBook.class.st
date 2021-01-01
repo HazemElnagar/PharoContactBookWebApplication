@@ -31,15 +31,3 @@ BaselineOfContactBook >> bootstrap: spec [
 			spec
 				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
 ]
-
-{ #category : #accessing }
-BaselineOfContactBook >> project [
-	^ super project
-		loadType: #atomic;
-		yourself
-]
-
-{ #category : #accessing }
-BaselineOfContactBook >> projectClass [
-	^ MetacelloCypressBaselineProject
-]
