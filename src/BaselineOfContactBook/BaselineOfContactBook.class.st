@@ -7,12 +7,17 @@ Class {
 { #category : #'private - subspecs' }
 BaselineOfContactBook >> baseline: spec [
 	<baseline>
+			spec
+			for: #common
+			do: [
+				self bootstrap: spec.
+						spec  
+		package:	'ContactBook'  with: [ spec requires: #('Bootstrap') ]
+						 ]
+			 
 			
-		self bootstrap: spec.
-		
-		spec  
-		package:	'ContactBook' 
-						 
+
+
 					
 ]
 
