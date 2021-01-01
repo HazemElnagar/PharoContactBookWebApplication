@@ -12,7 +12,7 @@ BaselineOfContactBook >> baseline: spec [
 			do: [
 					self bootstrap:  spec.
 					spec
-					package: 'ContactBook'
+					package: 'ContactBook'  with: [ spec requires: #('Bootstrap') ]
 					].
 				
 				
@@ -30,6 +30,13 @@ BaselineOfContactBook >> bootstrap: spec [
 		with: [ 
 			spec
 				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
+]
+
+{ #category : #accessing }
+BaselineOfContactBook >> project [
+	^ super project
+		loadType: #atomic;
+		yourself
 ]
 
 { #category : #accessing }
