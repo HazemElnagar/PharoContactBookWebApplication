@@ -11,12 +11,14 @@ BaselineOfContactBook >> baseline: spec [
 	spec for: #'pharo6.x' do: [	
 		spec preLoadDoIt: #preLoad61.
 		self 
+			seaside3: spec;
 		  	bootstrap: spec;
 			contactbook: spec  ].
 	
 	spec for: #'common' do: [	
 		self 
-			
+		
+			seaside3: spec;
 		  	bootstrap: spec;
 			contactbook: spec ]
 ]
@@ -43,4 +45,13 @@ BaselineOfContactBook >> preLoad61 [
 
 	Iceberg enableMetacelloIntegration: true.
 	IceMetacelloPharoPlatform select.
+]
+
+{ #category : #'private - subspecs' }
+BaselineOfContactBook >> seaside3: spec [
+	spec
+		baseline: 'Seaside3'
+		with: [ spec
+				loads: #('default' 'REST');
+				repository: 'github://SeasideSt/Seaside:master/repository' ]
 ]
