@@ -114,7 +114,6 @@ ConfigurationOContactBook >> baseline01: spec [
 
   spec for: #common do: [  
     spec blessing: #baseline.
-    spec repository: 'https://github.com/HazemElnagar/PharoContactBookWebApplication/tree/master/src/ContactBook/main'.
     spec 
 	package: 'ContactBook'.
 	
