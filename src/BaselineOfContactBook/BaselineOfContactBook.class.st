@@ -11,7 +11,7 @@ BaselineOfContactBook >> baseline: spec [
 			for: #common
 			do: [
 					spec
-					package: 'contactbook' ].
+					package: 'ContactBook' ].
 			 
 			
 
