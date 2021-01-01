@@ -11,8 +11,8 @@ BaselineOfContactBook >> baseline: spec [
 			for: #common
 			do: [
 					self seaside3:  spec;
-							bootstrap:spec.
-				spec	package:'ContactBook' with: [ spec requires: #('Seaside3 Bootstrap') ] 
+						  bootstrap: spec.
+				spec	package:'ContactBook' with: [ spec requires: #('Seaside3' 'Bootstrap') ] 
 					].
 				
 				
@@ -29,7 +29,6 @@ BaselineOfContactBook >> bootstrap: spec [
 		baseline: 'Bootstrap'
 		with: [ 
 			spec
-			loads: #('Core');
 				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
 ]
 
