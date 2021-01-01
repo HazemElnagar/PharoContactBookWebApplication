@@ -10,8 +10,11 @@ BaselineOfContactBook >> baseline: spec [
 			spec
 			for: #common
 			do: [
-					self bootstrap:  spec.
-									].
+					self seaside3:  spec.
+									
+					spec
+					package: 'ContactBook'
+					].
 				
 				
 			 
@@ -33,4 +36,13 @@ BaselineOfContactBook >> bootstrap: spec [
 { #category : #accessing }
 BaselineOfContactBook >> projectClass [
 	^ MetacelloCypressBaselineProject
+]
+
+{ #category : #'private - subspecs' }
+BaselineOfContactBook >> seaside3: spec [
+	spec
+		baseline: 'Seaside3'
+		with: [ spec
+				loads: #('default' 'REST');
+				repository: 'github://SeasideSt/Seaside:master/repository' ]
 ]
