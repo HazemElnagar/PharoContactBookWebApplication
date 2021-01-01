@@ -11,7 +11,8 @@ BaselineOfContactBook >> baseline: spec [
 			for: #common
 			do: [
 				self bootstrap: spec.
-
+						 spec baseline: 'ContactBook' with: [
+      spec repository: 'github://hazemelnagar/PharoContactBookWebApplication/src:master' ].
 						 ].
 			 
 			
