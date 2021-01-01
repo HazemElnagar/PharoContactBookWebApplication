@@ -12,8 +12,9 @@ BaselineOfContactBook >> baseline: spec [
 		self bootstrap: spec.
 		
 		spec  
-		package:	'ContactBook' with: [ spec requires: #('Bootstrap') ]		
+		package:	'ContactBook' 
 						 ]
+					
 ]
 
 { #category : #'private - subspecs' }
