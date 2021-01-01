@@ -12,8 +12,8 @@ BaselineOfContactBook >> baseline: spec [
 			do: [
 				self bootstrap: spec.
 						spec  
-		package:	'ContactBook'  with: [ spec requires: #('Bootstrap') ]
-						 ]
+		package:	'ContactBook'
+						 ].
 			 
 			
 
@@ -25,7 +25,8 @@ BaselineOfContactBook >> baseline: spec [
 BaselineOfContactBook >> bootstrap: spec [
 	spec
 		baseline: 'Bootstrap'
-		with: [ spec
+		with: [ 
+			spec
 				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
 ]
 
