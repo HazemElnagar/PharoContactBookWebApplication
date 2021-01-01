@@ -10,7 +10,6 @@ BaselineOfContactBook >> baseline: spec [
 			spec
 			for: #common
 			do: [
-					self seaside3:  spec.
 					self bootstrap:  spec.
 					
 					].
