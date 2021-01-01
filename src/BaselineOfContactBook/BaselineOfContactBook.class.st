@@ -12,7 +12,7 @@ BaselineOfContactBook >> baseline: spec [
 		self bootstrap: spec.
 		
 		spec  
-		package:	'ContactBook' with: [ spec requires: #('bootstrap') ]		
+		package:	'ContactBook' with: [ spec requires: #('Bootstrap') ]		
 						 ]
 ]
 
@@ -22,7 +22,7 @@ BaselineOfContactBook >> bootstrap: spec [
 		baseline: 'Bootstrap'
 		with: [ spec
 				loads: #('default' 'REST');
-				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]
+				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
 ]
 
 { #category : #accessing }
