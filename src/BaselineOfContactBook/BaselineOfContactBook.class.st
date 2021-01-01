@@ -10,8 +10,9 @@ BaselineOfContactBook >> baseline: spec [
 			spec
 			for: #common
 			do: [
-					self bootstrap:  spec.
-					
+					self seaside3:  spec.
+					spec
+					package: 'ContactBook'  with: [ spec requires: #('Seaside3') ]
 					].
 				
 				
@@ -29,4 +30,13 @@ BaselineOfContactBook >> bootstrap: spec [
 		with: [ 
 			spec
 				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
+]
+
+{ #category : #'private - subspecs' }
+BaselineOfContactBook >> seaside3: spec [
+	spec
+		baseline: 'Seaside3'
+		with: [ spec
+				loads: #('default' 'REST');
+				repository: 'github://SeasideSt/Seaside:master/repository' ]
 ]
