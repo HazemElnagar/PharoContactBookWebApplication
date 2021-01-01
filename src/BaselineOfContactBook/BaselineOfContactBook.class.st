@@ -10,8 +10,8 @@ BaselineOfContactBook >> baseline: spec [
 			spec
 			for: #common
 			do: [
-				self bootstrap: spec.
-						 ].
+				self bootstrap: spec;
+						contactbook: spec].
 			 
 			
 
@@ -26,6 +26,12 @@ BaselineOfContactBook >> bootstrap: spec [
 		with: [ 
 			spec
 				repository: 'github.com/astares/Seaside-Bootstrap:master/src' ]	
+]
+
+{ #category : #'private - subspecs' }
+BaselineOfContactBook >> contactbook: spec [
+	spec
+		package: 'ContactBook'.
 ]
 
 { #category : #accessing }
